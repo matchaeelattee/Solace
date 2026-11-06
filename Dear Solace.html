@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dear Solace</title>
+
+    <style>
+
+        body {
+            background-color: #EDC8AB;
+            margin: 0;
+            font-family: Georgia, serif;
+            text-align: center;
+        }
+
+        .opening {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            width: 90%;
+            max-width: 750px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .message {
+            color: #52301B;
+            font-size: 17px;
+            font-style: italic;
+            margin-bottom: 35px;
+        }
+
+        .envelope {
+            width: 150px;
+            height: 100px;
+            background-color: #A87554;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.4s ease;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+        }
+
+        .envelope:hover {
+            transform: translateY(-8px);
+        }
+
+        .envelope::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-left: 75px solid transparent;
+            border-right: 75px solid transparent;
+            border-top: 55px solid #D9AE8E;
+        }
+
+        .envelope::after {
+            content: "♥";
+            color: #F5E6D5;
+            font-size: 25px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .click-text {
+            color: #52301B;
+            font-size: 12px;
+            letter-spacing: 3px;
+            margin-top: 25px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="opening">
+
+        <img
+            src="Untitled120_20261106110252.jpg"
+          
+        >
+
+        <p class="message">
+            A little letter, a little wisdom, a little solace.
+        </p>
+
+        <a href="Welcome.html" style="text-decoration: none;">
+
+            <div class="envelope"></div>
+
+        </a>
+
+        <p class="click-text">
+            CLICK TO OPEN YOUR LETTER
+        </p>
+
+    </div>
+
+</body>
+
+</html>
