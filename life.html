@@ -1,0 +1,445 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Life Letters | Dear Solace</title>
+
+    <style>
+
+        body {
+            background-color: #E8D8C5;
+            margin: 0;
+            font-family: "Times New Roman", serif;
+            color: #493528;
+        }
+
+        header {
+            padding: 22px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #CBB69C;
+        }
+
+        header h1 {
+            font-size: 28px;
+            font-style: italic;
+            font-weight: normal;
+        }
+
+        header span {
+            font-size: 11px;
+            letter-spacing: 3px;
+        }
+
+        .intro {
+            text-align: center;
+            margin: 60px 20px 45px;
+        }
+
+        .intro .label {
+            color: #A98262;
+            font-size: 11px;
+            letter-spacing: 4px;
+        }
+
+        .intro h2 {
+            font-size: 38px;
+            font-weight: normal;
+            font-style: italic;
+        }
+
+        .intro p {
+            color: #80614B;
+            font-size: 15px;
+        }
+
+        /* ENVELOPE GRID */
+
+        .letters {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 55px 20px;
+            width: 90%;
+            max-width: 650px;
+            margin: 0 auto 70px;
+        }
+
+        .letter {
+            text-align: center;
+            text-decoration: none;
+            color: #493528;
+        }
+
+        /* ENVELOPE DESIGN */
+
+        .envelope {
+            width: 190px;
+            max-width: 100%;
+            aspect-ratio: 1.4 / 1;
+            margin: auto;
+            animation: float 3s ease-in-out infinite;
+            transition: transform 0.4s ease;
+        }
+
+        .letter:hover .envelope {
+            transform: translateY(-10px) scale(1.04);
+        }
+
+        .envelope svg {
+            width: 100%;
+            height: 100%;
+            overflow: visible;
+        }
+
+        /* NUMBER */
+
+        .number {
+            font-size: 23px;
+            font-style: italic;
+            margin-top: 18px;
+        }
+
+        .letter-title {
+            font-size: 11px;
+            letter-spacing: 2px;
+            color: #80614B;
+            margin-top: 6px;
+        }
+
+        /* BACK BUTTON */
+
+        .back {
+            display: block;
+            width: fit-content;
+            margin: 0 auto 50px;
+            padding: 12px 25px;
+            background-color: #76513D;
+            color: #FFFAF0;
+            text-decoration: none;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+
+        .back:hover {
+            background-color: #52301B;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            font-size: 11px;
+            letter-spacing: 2px;
+            color: #80614B;
+        }
+
+        /* FLOATING ANIMATION */
+
+        @keyframes float {
+
+            0%, 100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-7px);
+            }
+
+        }
+
+        /* MOBILE */
+
+        @media screen and (max-width: 480px) {
+
+            .letters {
+                width: 94%;
+                gap: 40px 10px;
+            }
+
+            .envelope {
+                width: 145px;
+            }
+
+            header h1 {
+                font-size: 21px;
+            }
+
+            header span {
+                font-size: 8px;
+                letter-spacing: 1px;
+            }
+
+            .intro h2 {
+                font-size: 29px;
+            }
+
+            .number {
+                font-size: 20px;
+            }
+
+            .letter-title {
+                font-size: 9px;
+                letter-spacing: 1px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Dear Solace</h1>
+
+        <span>LETTERS FOR THE SOUL</span>
+
+    </header>
+
+
+    <section class="intro">
+
+        <div class="label">
+            A COLLECTION OF LIFE LETTERS
+        </div>
+
+        <h2>Letters about Life.</h2>
+
+        <p>
+            Six little envelopes, each holding words
+            you might need along the way.
+        </p>
+
+    </section>
+
+
+    <section class="letters">
+
+        <!-- ENVELOPE 1 -->
+
+        <a href="letter1.html" class="letter">
+
+            <div class="envelope">
+                <svg viewBox="0 0 200 140">
+
+                    <rect x="8" y="8" width="184" height="124"
+                        rx="12" fill="#FFF0E6"
+                        stroke="#C5A98F" stroke-width="5"/>
+
+                    <path d="M10 15 L100 85 L190 15"
+                        fill="none" stroke="#C5A98F"
+                        stroke-width="5" stroke-linecap="round"/>
+
+                    <path d="M10 125 L77 70"
+                        fill="none" stroke="#C5A98F"
+                        stroke-width="5" stroke-linecap="round"/>
+
+                    <path d="M190 125 L123 70"
+                        fill="none" stroke="#C5A98F"
+                        stroke-width="5" stroke-linecap="round"/>
+
+                    <path d="M100 112
+                        C80 94 64 80 64 62
+                        C64 38 91 34 100 55
+                        C109 34 136 38 136 62
+                        C136 80 120 94 100 112Z"
+                        fill="#76513D"/>
+
+                </svg>
+            </div>
+
+            <div class="number">#1</div>
+            <div class="letter-title">A LETTER FOR YOU</div>
+
+        </a>
+
+
+        <!-- ENVELOPE 2 -->
+
+        <a href="letter2.html" class="letter">
+
+            <div class="envelope">
+                <svg viewBox="0 0 200 140">
+
+                    <rect x="8" y="8" width="184" height="124"
+                        rx="12" fill="#FFF0E6"
+                        stroke="#C5A98F" stroke-width="5"/>
+
+                    <path d="M10 15 L100 85 L190 15"
+                        fill="none" stroke="#C5A98F"
+                        stroke-width="5" stroke-linecap="round"/>
+
+                    <path d="M10 125 L77 70 M190 125 L123 70"
+                        fill="none" stroke="#C5A98F"
+                        stroke-width="5" stroke-linecap="round"/>
+
+                    <path d="M100 112 C80 94 64 80 64 62
+                        C64 38 91 34 100 55
+                        C109 34 136 38 136 62
+                        C136 80 120 94 100 112Z"
+                        fill="#76513D"/>
+
+                </svg>
+            </div>
+
+            <div class="number">#2</div>
+            <div class="letter-title">A LITTLE REMINDER</div>
+
+        </a>
+
+
+        <!-- ENVELOPE 3 -->
+
+        <a href="letter3.html" class="letter">
+
+            <div class="envelope">
+                <svg viewBox="0 0 200 140">
+
+                    <rect x="8" y="8" width="184" height="124"
+                        rx="12" fill="#FFF0E6"
+                        stroke="#C5A98F" stroke-width="5"/>
+
+                    <path d="M10 15 L100 85 L190 15"
+                        fill="none" stroke="#C5A98F"
+                        stroke-width="5" stroke-linecap="round"/>
+
+                    <path d="M10 125 L77 70 M190 125 L123 70"
+                        fill="none" stroke="#C5A98F"
+                        stroke-width="5" stroke-linecap="round"/>
+
+                    <path d="M100 112 C80 94 64 80 64 62
+                        C64 38 91 34 100 55
+                        C109 34 136 38 136 62
+                        C136 80 120 94 100 112Z"
+                        fill="#76513D"/>
+
+                </svg>
+            </div>
+
+            <div class="number">#3</div>
+            <div class="letter-title">FOR THE HARD DAYS</div>
+
+        </a>
+
+
+        <!-- ENVELOPE 4 -->
+
+        <a href="letter4.html" class="letter">
+
+            <div class="envelope">
+                <svg viewBox="0 0 200 140">
+
+                    <rect x="8" y="8" width="184" height="124"
+                        rx="12" fill="#FFF0E6"
+                        stroke="#C5A98F" stroke-width="5"/>
+
+                    <path d="M10 15 L100 85 L190 15"
+                        fill="none" stroke="#C5A98F"
+                        stroke-width="5" stroke-linecap="round"/>
+
+                    <path d="M10 125 L77 70 M190 125 L123 70"
+                        fill="none" stroke="#C5A98F"
+                        stroke-width="5" stroke-linecap="round"/>
+
+                    <path d="M100 112 C80 94 64 80 64 62
+                        C64 38 91 34 100 55
+                        C109 34 136 38 136 62
+                        C136 80 120 94 100 112Z"
+                        fill="#76513D"/>
+
+                </svg>
+            </div>
+
+            <div class="number">#4</div>
+            <div class="letter-title">ON STARTING AGAIN</div>
+
+        </a>
+
+
+        <!-- ENVELOPE 5 -->
+
+        <a href="letter5.html" class="letter">
+
+            <div class="envelope">
+                <svg viewBox="0 0 200 140">
+
+                    <rect x="8" y="8" width="184" height="124"
+                        rx="12" fill="#FFF0E6"
+                        stroke="#C5A98F" stroke-width="5"/>
+
+                    <path d="M10 15 L100 85 L190 15"
+                        fill="none" stroke="#C5A98F"
+                        stroke-width="5" stroke-linecap="round"/>
+
+                    <path d="M10 125 L77 70 M190 125 L123 70"
+                        fill="none" stroke="#C5A98F"
+                        stroke-width="5" stroke-linecap="round"/>
+
+                    <path d="M100 112 C80 94 64 80 64 62
+                        C64 38 91 34 100 55
+                        C109 34 136 38 136 62
+                        C136 80 120 94 100 112Z"
+                        fill="#76513D"/>
+
+                </svg>
+            </div>
+
+            <div class="number">#5</div>
+            <div class="letter-title">A NOTE OF HOPE</div>
+
+        </a>
+
+
+        <!-- ENVELOPE 6 -->
+
+        <a href="letter6.html" class="letter">
+
+            <div class="envelope">
+                <svg viewBox="0 0 200 140">
+
+                    <rect x="8" y="8" width="184" height="124"
+                        rx="12" fill="#FFF0E6"
+                        stroke="#C5A98F" stroke-width="5"/>
+
+                    <path d="M10 15 L100 85 L190 15"
+                        fill="none" stroke="#C5A98F"
+                        stroke-width="5" stroke-linecap="round"/>
+
+                    <path d="M10 125 L77 70 M190 125 L123 70"
+                        fill="none" stroke="#C5A98F"
+                        stroke-width="5" stroke-linecap="round"/>
+
+                    <path d="M100 112 C80 94 64 80 64 62
+                        C64 38 91 34 100 55
+                        C109 34 136 38 136 62
+                        C136 80 120 94 100 112Z"
+                        fill="#76513D"/>
+
+                </svg>
+            </div>
+
+            <div class="number">#6</div>
+            <div class="letter-title">WORDS TO REMEMBER</div>
+
+        </a>
+
+    </section>
+
+
+    <a href="letters.html" class="back">
+        BACK TO CATEGORIES
+    </a>
+
+
+    <footer>
+        DEAR SOLACE · WORDS TO KEEP, WISDOM TO CARRY
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Letters | Dear Solace</title>
+
+    <style>
+
+        body {
+            background-color: #E8D8C5;
+            margin: 0;
+            color: #493528;
+            font-family: "Times New Roman", serif;
+        }
+
+        header {
+            padding: 22px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #CBB69C;
+        }
+
+        header h1 {
+            font-size: 28px;
+            font-style: italic;
+            font-weight: normal;
+        }
+
+        header span {
+            font-size: 11px;
+            letter-spacing: 3px;
+        }
+
+        .intro {
+            text-align: center;
+            margin: 65px 20px 45px;
+        }
+
+        .intro h2 {
+            font-size: 38px;
+            font-weight: normal;
+            font-style: italic;
+        }
+
+        .intro p {
+            font-size: 16px;
+            color: #80614B;
+        }
+
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 35px;
+            width: 85%;
+            max-width: 900px;
+            margin: 0 auto 70px;
+        }
+
+        .category {
+            text-align: center;
+            text-decoration: none;
+            color: #493528;
+            padding: 25px 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .category:hover {
+            transform: translateY(-10px);
+        }
+
+        .envelope {
+            width: 140px;
+            height: 95px;
+            background-color: #A87554;
+            margin: 0 auto 20px;
+            position: relative;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.12);
+        }
+
+        .envelope::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-left: 70px solid transparent;
+            border-right: 70px solid transparent;
+            border-top: 48px solid #D9AE8E;
+        }
+
+        .envelope::after {
+            content: "✦";
+            color: #FFFAF0;
+            font-size: 22px;
+            position: absolute;
+            top: 48%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .category h3 {
+            font-size: 23px;
+            font-weight: normal;
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+
+        .category p {
+            font-size: 13px;
+            color: #80614B;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            font-size: 11px;
+            letter-spacing: 2px;
+            color: #80614B;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            .categories {
+                grid-template-columns: repeat(2, 1fr);
+                width: 95%;
+                gap: 10px;
+            }
+
+            header h1 {
+                font-size: 21px;
+            }
+
+            header span {
+                font-size: 8px;
+            }
+
+            .envelope {
+                width: 110px;
+                height: 75px;
+            }
+
+            .envelope::before {
+                border-left-width: 55px;
+                border-right-width: 55px;
+                border-top-width: 38px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Dear Solace</h1>
+
+        <span>LETTERS FOR THE SOUL</span>
+
+    </header>
+
+
+    <section class="intro">
+
+        <p> A COLLECTION OF THOUGHTS AND WISDOM </p>
+
+        <h2>Letters for every season of life.</h2>
+
+        <p>
+            Choose an envelope and find the words
+            waiting for you inside.
+        </p>
+
+    </section>
+
+
+    <section class="categories">
+
+        <a href="life.html" class="category">
+
+            <div class="envelope"></div>
+
+            <h3>Life</h3>
+
+            <p>For the journey of living.</p>
+
+        </a>
+
+
+        <a href="relationships.html" class="category">
+
+            <div class="envelope"></div>
+
+            <h3>Relationships</h3>
+
+            <p>For the connections we cherish.</p>
+
+        </a>
+
+
+        <a href="friendship.html" class="category">
+
+            <div class="envelope"></div>
+
+            <h3>Friendship</h3>
+
+            <p>For the people who stay.</p>
+
+        </a>
+
+
+        <a href="family.html" class="category">
+
+            <div class="envelope"></div>
+
+            <h3>Family</h3>
+
+            <p>For the bonds that shape us.</p>
+
+        </a>
+
+
+        <a href="selfgrowth.html" class="category">
+
+            <div class="envelope"></div>
+
+            <h3>Self-Growth</h3>
+
+            <p>For the person you are becoming.</p>
+
+        </a>
+
+
+        <a href="hope.html" class="category">
+
+            <div class="envelope"></div>
+
+            <h3>Hope</h3>
+
+            <p>For brighter days ahead.</p>
+
+        </a>
+
+    </section>
+
+
+    <footer>
+
+        DEAR SOLACE · WORDS TO KEEP, WISDOM TO CARRY
+
+    </footer>
+
+
+</body>
+</html>
